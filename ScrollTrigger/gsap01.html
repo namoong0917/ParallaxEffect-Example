@@ -214,6 +214,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script> -->
     <script>
+      // 본문은 scrollTrigger: {} 를 이용해 작업한다.
+
       const box1 = document.querySelector("#section1 .parallax__item__img");
       const box2 = document.querySelector("#section2 .parallax__item__img");
       const box3 = document.querySelector("#section3 .parallax__item__img");
@@ -223,6 +225,10 @@
       const box7 = document.querySelector("#section7 .parallax__item__img");
       const box8 = document.querySelector("#section8 .parallax__item__img");
       const box9 = document.querySelector("#section9 .parallax__item__img");
+
+      // to() 메서드는 타겟 엘리먼트의 끝 값을 지정하는 가장 기본적인 메서드로 애니메이션 시작 후 종료되는 값을 지정해주는 메서드이다.
+      // from() 메서드는 to() 메서드와는 반대로 시작점을 지정할 수 있다.즉 어떤 상태에서 시작할지 선언을 해준다고 보면 되는데 기본 문법도 to() 메서드와 비슷하다.
+      // formTo()는 타겟 엘리먼트의 시작과 끝을 함께 지정해주는 메서드이다.
 
       // 01
       gsap.to(box1, {
