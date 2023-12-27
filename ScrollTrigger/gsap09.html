@@ -361,10 +361,13 @@
           end: "bottom center",
           markers: true,
           // self는 this와 같다.
+          // 해당 부분에 들어갔을 때 true false로 값을 전달 시켜줘서
+          // 아래 link.addEvent 에 판단시키게함
           onToggle: (self) => setActive(link),
         });
 
         // 클릭했을때 클릭한 값에 정보를 e라는 매개변수로 넘겨준다
+        // 클릭하면 gsap로 해당 부분에 가서 start 값을 맞춰줘서 넣어주게된다.
         link.addEventListener("click", (e) => {
           // preventDefault 는 기능을 차단
           e.preventDefault();
