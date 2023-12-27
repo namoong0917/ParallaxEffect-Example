@@ -1,4 +1,4 @@
 [[redirects]]
 from = "/*"
-to = "/gsap01.html"
+to = "gsap01.html"
 status = 200
