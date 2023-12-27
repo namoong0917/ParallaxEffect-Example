@@ -1,6 +1,6 @@
 # gsap
 
-url :
+url : https://parallaxeffect-example.netlify.app/scrolltrigger/gsap01
 
 ## gsap 의 ScrollTrigger 부분 공부
 
