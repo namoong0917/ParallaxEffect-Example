@@ -260,9 +260,9 @@
       <!-- //section9 -->
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
     <script>
       const horizontal = document.querySelector("#horizontal");
       const sections = gsap.utils.toArray("#horizontal > section");
@@ -280,7 +280,7 @@
           snap: {
             snapTo: 1 / (sections.length - 1),
             inertia: false, // snap의 관성 효과 false
-            // duration: { min: 0.1, max: 0.1 }, // 애니메이션 snap의 최소시간 최대 시간 설정
+            duration: { min: 0.1, max: 0.1 }, // 애니메이션 snap의 최소시간 최대 시간 설정
           },
           invalidateOnRefresh: true, // 작업중 refresh 값이 없어질수 있기때문에 값을 유지시켜서 깜빡이는 현상이나 버그를 없애줌
           anticipatePin: 1, // 부드러운 핀효과
